@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>كل المعاملات - تطبيق الميزانية المبسط</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="notification-container"></div>
+
+<header class="app-header">
+    <h1>كل المعاملات</h1>
+</header>
+
+<nav class="top-nav">
+    <a href="index.html">الرئيسية</a>
+    <a href="transactions.html" class="active">كل المعاملات</a>
+    <a href="reports.html">التقارير</a>
+    <a href="settings.html">الإعدادات</a>
+</nav>
+
+<main class="page">
+
+    <section class="card">
+        <h2>سجل المعاملات</h2>
+        <div class="table-wrapper">
+            <table class="data-table" id="transactions-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>النوع</th>
+                        <th>المبلغ</th>
+                        <th>الفئة</th>
+                        <th>الوصف</th>
+                        <th>التاريخ</th>
+                        <th>إجراء</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- يتم تعبئته عبر JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <p id="no-transactions-msg" class="muted">لا توجد معاملات مسجلة.</p>
+    </section>
+
+</main>
+
+<script src="assets/js/common.js"></script>
+<script src="assets/js/transactions.js"></script>
+
+</body>
+</html>

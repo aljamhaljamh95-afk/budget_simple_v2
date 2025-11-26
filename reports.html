@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>التقارير - تطبيق الميزانية المبسط</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="notification-container"></div>
+
+<header class="app-header">
+    <h1>التقارير البسيطة</h1>
+</header>
+
+<nav class="top-nav">
+    <a href="index.html">الرئيسية</a>
+    <a href="transactions.html">كل المعاملات</a>
+    <a href="reports.html" class="active">التقارير</a>
+    <a href="settings.html">الإعدادات</a>
+</nav>
+
+<main class="page">
+
+    <section class="card">
+        <h2>ملخص عام</h2>
+        <p>إجمالي الدخل: <strong id="rep-total-income">0.00 ر.س</strong></p>
+        <p>إجمالي المصروفات: <strong id="rep-total-expense">0.00 ر.س</strong></p>
+        <p>الرصيد النهائي: <strong id="rep-total-balance">0.00 ر.س</strong></p>
+    </section>
+
+    <section class="card">
+        <h2>ملخص الشهر الحالي</h2>
+        <p>دخل هذا الشهر: <strong id="rep-month-income">0.00 ر.س</strong></p>
+        <p>مصروفات هذا الشهر: <strong id="rep-month-expense">0.00 ر.س</strong></p>
+        <p>الميزانية المحددة: <strong id="rep-budget-limit">غير محدد</strong></p>
+        <p>نسبة استهلاك الميزانية: <strong id="rep-budget-percent">0%</strong></p>
+    </section>
+
+</main>
+
+<script src="assets/js/common.js"></script>
+<script src="assets/js/reports.js"></script>
+
+</body>
+</html>
